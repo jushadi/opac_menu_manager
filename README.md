@@ -9,7 +9,13 @@ Buka file folder contoh di template nama foldernya default
 
 Cari blok navigasi menu (biasanya <ul class="nav navbar-nav">...</ul>).
 
-Ganti seluruh blok tersebut dengan kode ini:
+Ubah tersebut dengan kode ini:
+            <?php
+            // Awal kode yang ditambahkan
+            if (function_exists('render_opac_menu_items')) {
+                render_opac_menu_items();
+            }
+            ?>
 
 PHP
 
